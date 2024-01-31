@@ -48,7 +48,7 @@ export const getDb = async () => {
   // CONDITIONAL for determining whether there is something in db to return
   // either returns the latest index or returns a null
   if (result != null) {
-    return result[result.length - 1];
+    return result[result.length - 1].content;
   }
   return null;
 };
